@@ -26,7 +26,7 @@ ul{
 
 header{
     max-width: 100%;
-    background-image: url(/image/IMG_3270.jpeg);
+    background-image: url(https://shuheikamakura.github.io/portfolio-site/image/IMG_3270.jpeg);
     height: 1000px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -344,7 +344,7 @@ header{
     padding-bottom: 200px;
     transform : translate(0, 50px);
     transition : all 1500ms;
-    background-image: url(/image/sea.jpeg);
+    background-image: url(https://shuheikamakura.github.io/portfolio-site/image/sea.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
