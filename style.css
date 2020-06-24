@@ -1,0 +1,532 @@
+/*
+Theme Name: PORTFOLIOSITE
+Theme URI: https://dotinstall.com/
+Description: portfoliositeのテーマです
+Author: shuhei
+Author URI: http://dotinstall.com/
+Version: 1.0
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.action{
+    display: block;
+}
+
+header{
+    max-width: 100%;
+    background-image: url(/image/IMG_3270.jpeg);
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-wrap{
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    background-color:rgb(255,255,255,0.4);
+    z-index: 1000000;
+}
+.header-left{
+    max-width: 100%;
+    width: 20%;
+    z-index: 10000;
+    cursor: pointer;
+   display: inline-block;
+   margin-top: 25px;
+}
+.header-left h2{
+    font-family: 'klee',sans-serif;
+    font-size: 20px;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+.header-right{
+    float: right;
+}
+
+.header-right a{
+    float: left;
+    margin: 10px;
+    display: block;
+}
+
+.header-right a :hover{
+    background:linear-gradient(transparent 95%, #000000 0%);
+}
+.header-right p{
+    color: black;
+    font-size: 22px;
+    font-family: 'klee',sans-serif;
+}
+
+.header-contents{
+    max-width: 100%;
+    padding-top: 150px;
+}
+
+.header-contents h2{
+    font-size: 80px;
+    font-family: 'HanziPen SC',sans-serif;
+    opacity: 0;
+}
+
+.header-bottom{
+    position: fixed;
+    display: block;
+    left: 90%;
+    top: 85%;
+    z-index: 10000;
+    background-color: transparent;
+    border: 1px solid #000000;
+}
+
+
+.header-bottom p{
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    padding-left: 12.5px;
+    padding-top: 6px;
+    color: #000000;
+}
+
+.header-bottom:hover{
+    background-color: white;
+    transition: 1000ms;
+}
+.mes span{
+    opacity: 0;
+}
+
+.header-contents h1{
+    font-size: 80px;
+    font-family: 'HanziPen SC',sans-serif;
+}
+.header2{
+    display: none;
+}
+
+
+
+.About{
+    opacity: 0;
+    transform : translate(0, 50px);
+    transition : all 1500ms;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.About.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.about-top{
+    text-align: center;
+    font-family: 'HanziPen SC',sans-serif;
+}
+
+.about-top h3{
+    font-size: 60px;
+}
+
+.about-wrap{
+    max-width: 100%;
+    text-align: center;
+}
+
+
+.about-left{
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+.about-left img{
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+}
+
+.about-right{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 600px;
+    max-width: 100%;
+    padding-left: 120px;
+}
+
+.about-right h3{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.about-right p{
+    font-size: 20px;
+    font-family: 'HanziPen TC',sans-serif;
+}
+
+
+.Skill{
+    text-align: center;
+    background-color: #ffcc33;
+    transform : translate(0, 50px);
+    transition : all 1500ms;
+    opacity: 0;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.Skill.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.skill-top{
+    text-align: center;
+    font-family: 'HanziPen SC',sans-serif;
+}
+
+.skill-top h3{
+    font-size: 60px;
+}
+
+.skill-wrap{
+    max-width: 100%;
+    padding: 60px;
+    padding-top: 20px;
+    
+}
+
+.skills{
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border: 2px solid #ffcc33;
+    border-radius: 115px;
+    margin: 20px;
+    box-shadow: 0 0 8px gray;
+    background-color: white;
+}
+
+.skills::after{
+    top: -4px;
+    left: -4px;
+    padding: 0;
+    z-index: 10;
+    
+}
+.skills:hover{
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+    border: 4px dashed #ffcc33;
+    box-shadow: 0 0 48px gray;
+}
+
+.skills p{
+    font-size: 20px;
+    margin-top: 30px;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+
+.skills h3{
+    font-size: 50px;
+    margin: 0;
+}
+
+
+.star-rating {
+    position: relative;
+    font-size: 15px;
+}
+.star-rating-front {
+    position: absolute;
+    top: 0%;
+    left: 33.5%;
+    overflow: hidden;
+    color: #ffcc33;
+}
+.star-rating-back {
+    color: #ccc;
+}
+
+.Services{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-image: url(/image/services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform : translate(0, 50px);
+    transition : all 1500ms;
+}
+.Services.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.service-top{
+    text-align: center;
+    font-family: 'HanziPen SC',sans-serif;
+}
+
+.service-top h3{
+    font-size: 60px;
+}
+
+.service-wrap{
+    max-width: 100%;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.services{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    background-color: white;
+    margin: 20px;
+    opacity: 0.6;
+    border: 0.1875em solid #1B5E20;
+    padding-bottom: 10px;
+}
+
+.services:hover{
+    opacity: 0.8;
+}
+.services h2{
+}
+
+.services h3{
+    font-size: 50px;
+    margin: 0;
+}
+
+.services p{
+    text-align: left;
+    padding: 0 20px;
+}
+
+.seo{
+    padding-bottom: 30px;
+}
+
+
+.Works{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    transform : translate(0, 50px);
+    transition : all 1500ms;
+    background-image: url(/image/sea.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Works.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.work-top{
+    text-align: center;
+    font-family: 'HanziPen SC',sans-serif;
+}
+
+.work-top h3{
+    font-size: 60px;
+}
+
+
+.works{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 20px;
+}
+
+.works h3{
+    position: absolute;
+    display: none;
+    top: 30%;
+    left: 14%;
+    padding-left: 20px;
+}
+
+.works img{
+    width: 350px;
+    height: 200px;
+}
+
+#worked h3{
+    top: 30%;
+    left: 30%;
+}
+
+.nonaction{
+    display: none;
+}
+
+.works-more{
+    float: right;
+    margin-right: 150px;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.works-more h3{ 
+    color: white;
+    margin: 0;
+}
+
+.works-more:hover{
+    background-color: #ffcc33;
+    transition: 800ms;
+}
+
+
+.Contact{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #f3f5f8;
+}
+
+.contact-top{
+    text-align: center;
+    font-family: 'HanziPen SC',sans-serif;
+}
+.contact-top h3{
+    font-size: 60px;
+}
+
+.contact-wrap{
+    text-align: center;
+}
+
+.contact-wrap h3{
+}
+
+
+.name-box{
+    display: block;
+    margin: auto;
+    width: 500px;
+    max-width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.mail-box{
+    display: block;
+    margin: auto;
+    width: 500px;
+    max-width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.contents-box{
+    width: 500px;
+    height: 200px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.submit-btn{
+    margin-top: 50px;
+    padding: 20px 40px;
+}
+
+input::placeholder{
+    padding-left: 10px;
+}
+
+textarea::placeholder{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+footer{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.footer-wrap{
+    padding-right: 200px;
+    max-width: 100%;
+}
+
+.footer-left{
+    display: inline-block;
+    max-width: 100%;
+    width: 20%;
+}
+
+.footer-left h2{
+    font-size: 5px;
+    font-family: 'HanziPen SC',sans-serif;
+}
+
+.sns-wrap{
+    display: inline-block;
+}
+.sns-wrap a{
+    display: inline-block;
+    width: 50px;
+    max-width: 100%;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 25px;
+    margin:0 10px;
+}
+
+.sns-wrap p{
+    color: white;
+    text-align: center;
+    width: 50px;
+    max-width: 100%;
+    height: 50px;
+}
+.brust{
+    display: none;
+}

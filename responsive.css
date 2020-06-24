@@ -1,0 +1,239 @@
+/* タブレット縦以上 */
+@media screen and (max-width: 769px) {
+    .header1{
+        display: none;
+    }
+
+    /* ハンバーガー */
+    .header2{
+        display: block;
+    }
+    .global-nav {
+        position: fixed;
+        right: -320px; /* これで隠れる */
+        top: 0;
+        width: 100px; /* スマホに収まるくらい */
+        height: 100vh;
+        padding-top: 50px;
+        background-color: transparent;
+        transition: all .6s;
+        z-index: 200;
+        overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+    }
+    .hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px; /* クリックしやすいようにちゃんと幅を指定する */
+        height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+        cursor: pointer;
+        z-index: 300;
+    }
+    .global-nav__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .global-nav__item {
+        padding: 0 20px;
+    }
+    .global-nav__item a {
+        display: block;
+        padding: 3px 0;
+        text-decoration: none;
+        color: #111;
+        font-size: 12px;
+        font-family: 'klee',sans-serif;
+        font-weight: 600;
+    }
+    .global-nav__item a:hover {
+        border-bottom: 1px solid #eee;
+    }
+    .hamburger__line {
+        position: absolute;
+        left: 11px;
+        width: 20px;
+        height: 1px;
+        background-color: #111;
+        transition: all .6s;
+    }
+    .hamburger__line--1 {
+        top: 24px;
+    }
+    .hamburger__line--2 {
+        top: 30px;
+    }
+    .hamburger__line--3 {
+        top: 36px;
+    }
+    
+    /* 表示された時用のCSS */
+    .nav-open .global-nav {
+        right: 0;
+    }
+    .nav-open .hamburger__line--1 {
+        transform: rotate(45deg);
+        top: 30px;
+    }
+    .nav-open .hamburger__line--2 {
+        width: 0;
+        left: 50%;
+    }
+    .nav-open .hamburger__line--3 {
+        transform: rotate(-45deg);
+        top: 30px;
+    }
+
+    header{
+        height: 800px;
+        background-position: right;
+    }
+    .header-left{
+        margin: 10px;
+    }
+    .header-left h2{
+        font-size: 14px;
+    }
+    .header-contents{
+        float: right;
+        margin-right: 30px;
+        padding-top: 80px;
+    }
+    .header-contents h2{
+        font-size: 35px;
+        margin-top: 0;
+    }
+    .header-bottom{
+        left: 80%;
+    }
+
+    .About{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .about-top h3{
+        font-size: 50px;
+    }
+    .about-left img{
+        width: 300px;
+    }
+
+    .about-right{
+        padding: 0;
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: 350px;
+        margin-top: 60px;
+    }
+
+    .about-right h3{
+        font-size: 20px;
+    }
+
+    .about-right p{
+        font-size: 15px;
+        text-align: left;
+        margin-top: 20px;
+    }
+    .Skill{
+        padding-bottom: 50px;
+    }
+    .skill-top h3{
+        font-size: 50px;
+    }
+
+    .skill-wrap{
+
+    }
+
+    .skills{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: 5px;
+    }
+
+    .skills p{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .skills h3{
+        font-size: 20px;
+    }
+    .star-rating{
+        font-size: 10px;
+    }
+
+    .star-rating-front{
+        left: 23.6%;
+    }
+    .Services{
+        
+    }
+
+    .service-wrap{
+        padding: 0 50px;
+    }
+
+    .service-top h3{
+        font-size: 50px;
+    }
+
+    .services{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .services h2{
+        font-size: 18px;
+    }
+    .services h3{
+        font-size: 30px;
+    }
+    .services p{
+        font-size: 14px;
+    }
+    .work-top h3{
+        font-size: 50px;
+    }
+    .Contact{
+    }
+    .contact-top h3{
+        font-size: 50px;
+    }
+    .contact-wrap h3{
+        font-size: 15px;
+    }
+    .name-box{
+        width: 450px;
+    }
+    .mail-box{
+        width: 450px;
+    }
+    .contents-box{
+        width: 450px;
+    }
+    .footer-wrap{
+        text-align: center;
+        padding: 0;
+    }
+    .brust{
+        display: block;
+    }
+    .footer-left{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .footer-right{
+        display: block;
+    }
+
+}
+/* スマホ横 */
+@media screen and (max-width: 481px) {
+}
