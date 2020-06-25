@@ -4,11 +4,17 @@
 
 body {
     margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN",sans-serif;
+    font-weight: 600;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+h1,h2,h3,p{
+    font-weight: 600;
 }
 
 ul{
@@ -25,7 +31,7 @@ ul{
 
 header{
     max-width: 100%;
-    background-image: url(https://shuheikamakura.github.io/portfolio-site/image/IMG_3270.jpeg);
+    background-image: url(/image/IMG_3270.jpeg);
     height: 1000px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,7 +123,7 @@ header{
 
 .header-contents h1{
     font-size: 80px;
-    font-family: 'HanziPen SC',sans-serif;
+    font-family: 'Chalkboard SE',sans-serif;
 }
 .header2{
     display: none;
@@ -187,7 +193,7 @@ header{
 
 .about-right p{
     font-size: 20px;
-    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    font-family: 'HanziPen TC',sans-serif;
 }
 
 
@@ -249,7 +255,7 @@ header{
 .skills p{
     font-size: 20px;
     margin-top: 30px;
-    font-family: 'Hiragino Maru Gothic ProN',sans-serif;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
 }
 
 .skills h3{
@@ -277,7 +283,7 @@ header{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 150px;
-    background-image: url(https://shuheikamakura.github.io/portfolio-site/image/services.jpg);
+    background-image: url(/image/services.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -343,7 +349,7 @@ header{
     padding-bottom: 200px;
     transform : translate(0, 50px);
     transition : all 1500ms;
-    background-image: url(https://shuheikamakura.github.io/portfolio-site/image/sea.jpeg);
+    background-image: url(/image/sea.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
