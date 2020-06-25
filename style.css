@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    font-family: "Hiragino Kaku Gothic ProN",sans-serif;
 }
 
 a {
@@ -188,7 +187,7 @@ header{
 
 .about-right p{
     font-size: 20px;
-    font-family: 'HanziPen TC',sans-serif;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
 }
 
 
