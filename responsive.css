@@ -157,6 +157,7 @@
         font-size: 30px;
         text-align: left;
         margin-top: 20px;
+        font-family: initial;
     }
     .Skill{
         padding-top: 100px;
@@ -176,6 +177,7 @@
 
     .service-top h3{
         font-size: 80px;
+        font-family: 'Chalkboard SE',sans-serif;
     }
 
     .services{
