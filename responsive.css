@@ -1,5 +1,12 @@
 /* タブレット縦以上 */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1009px) {
+    body {
+        font-family: "Helvetica Neue",
+          Arial,
+          "Hiragino Kaku Gothic ProN",
+          "Hiragino Sans",Meiryo,
+          sans-serif;
+    }
     .header1{
         display: none;
     }
@@ -10,9 +17,9 @@
     }
     .global-nav {
         position: fixed;
-        right: -320px; /* これで隠れる */
+        right: -200px; /* これで隠れる */
         top: 0;
-        width: 100px; /* スマホに収まるくらい */
+        width: 200px; /* スマホに収まるくらい */
         height: 100vh;
         padding-top: 50px;
         background-color: transparent;
@@ -30,19 +37,21 @@
         z-index: 300;
     }
     .global-nav__list {
-        margin: 0;
-        padding: 0;
+        margin-top: 100px;
+        padding: 0px;
         list-style: none;
+        text-align: center;
     }
     .global-nav__item {
-        padding: 0 20px;
+        padding: 10px 20px;
+        padding-right: 100px;
     }
     .global-nav__item a {
         display: block;
         padding: 3px 0;
         text-decoration: none;
         color: #111;
-        font-size: 12px;
+        font-size: 30px;
         font-family: 'klee',sans-serif;
         font-weight: 600;
     }
@@ -51,9 +60,9 @@
     }
     .hamburger__line {
         position: absolute;
-        left: 11px;
-        width: 20px;
-        height: 1px;
+        left: -20px;
+        width: 40px;
+        height: 2px;
         background-color: #111;
         transition: all .6s;
     }
@@ -61,10 +70,10 @@
         top: 24px;
     }
     .hamburger__line--2 {
-        top: 30px;
+        top: 40px;
     }
     .hamburger__line--3 {
-        top: 36px;
+        top: 56px;
     }
     
     /* 表示された時用のCSS */
@@ -73,50 +82,63 @@
     }
     .nav-open .hamburger__line--1 {
         transform: rotate(45deg);
-        top: 30px;
+        top: 40px;
     }
     .nav-open .hamburger__line--2 {
         width: 0;
-        left: 50%;
+        left: 60%;
     }
     .nav-open .hamburger__line--3 {
         transform: rotate(-45deg);
-        top: 30px;
+        top: 40px;
     }
 
     header{
-        height: 800px;
-        background-position: right;
+        height: 2000px;
+        background-position: -1600px;
+    }
+    .header-wrap{
+        height: 100px;
     }
     .header-left{
-        margin: 10px;
+        margin-top: 30px;
     }
     .header-left h2{
-        font-size: 14px;
+        font-size: 20px;
     }
     .header-contents{
         float: right;
-        margin-right: 30px;
-        padding-top: 80px;
+        margin-right: 80px;
+        padding-top: 150px;
     }
     .header-contents h2{
-        font-size: 35px;
+        font-size: 90px;
         margin-top: 0;
     }
     .header-bottom{
         left: 80%;
     }
+    .header-bottom p{
+        width: 100px;
+        height: 100px;
+        padding-left: 34px;
+        padding-top: 25px;
+        font-size: 35px;
+    }
 
     .About{
         text-align: center;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        height: 1800px;
     }
 
     .about-top h3{
-        font-size: 50px;
+        font-size: 80px;
     }
     .about-left img{
-        width: 300px;
+        width: 500px;
+        border-radius: 250px;
     }
 
     .about-right{
@@ -124,7 +146,7 @@
         text-align: center;
         display: block;
         margin: auto;
-        width: 350px;
+        width: 750px;
         margin-top: 60px;
     }
 
@@ -133,88 +155,98 @@
     }
 
     .about-right p{
-        font-size: 15px;
+        font-size: 30px;
         text-align: left;
         margin-top: 20px;
     }
     .Skill{
-        padding-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .skill-top h3{
-        font-size: 50px;
+        font-size: 80px;
     }
 
-    .skill-wrap{
-
-    }
-
-    .skills{
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        margin: 5px;
-    }
-
-    .skills p{
-        font-size: 14px;
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-    .skills h3{
-        font-size: 20px;
-    }
-    .star-rating{
-        font-size: 10px;
-    }
-
-    .star-rating-front{
-        left: 23.6%;
-    }
     .Services{
-        
+        padding: 100px 0;
     }
-
     .service-wrap{
         padding: 0 50px;
     }
 
     .service-top h3{
-        font-size: 50px;
+        font-size: 80px;
     }
 
     .services{
-        width: 100%;
         margin: 10px;
+        display: block;
+        margin: auto;
+        width: 800px;
+        height: 400px;
+        margin: 40px;
+        padding: 20px 30px;
     }
 
     .services h2{
-        font-size: 18px;
+        font-size: 38px;
     }
     .services h3{
-        font-size: 30px;
+        font-size: 50px;
     }
     .services p{
-        font-size: 14px;
+        font-size: 24px;
     }
+    .Works{
+        padding: 100px 0;
+    }
+
     .work-top h3{
-        font-size: 50px;
+        font-size: 80px;
+    }
+    .works{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .works img{
+        width: 800px;
+        height: 500px;
+    }
+    .works h3{
+        top: 40%;
+        left: 30%;
+        font-size: 30px;
+    }
+    #worked h3{
+        padding-left: 130px;
+        padding-top: 30px;
+    }
+    .works-more{
+        padding: 20px 30px;
+    }
+    .works-more h3{
+        font-size: 20px;
     }
     .Contact{
+        padding: 100px 0;
     }
     .contact-top h3{
-        font-size: 50px;
+        font-size: 80px;
     }
     .contact-wrap h3{
-        font-size: 15px;
+        font-size: 25px;
     }
     .name-box{
-        width: 450px;
+        width: 800px;
+        height: 100px;
     }
     .mail-box{
-        width: 450px;
+        width: 800px;
+        height: 100px;
     }
     .contents-box{
-        width: 450px;
+        width: 800px;
     }
     .footer-wrap{
         text-align: center;
@@ -228,9 +260,25 @@
         display: block;
         margin-bottom: 20px;
     }
+    .footer-left h2{
+        font-size: 20px;
+    }
 
     .footer-right{
         display: block;
+    }
+    .sns-wrap a{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        padding-bottom: 30px;
+    }
+    .sns-wrap p{
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        margin-top: 12px;
     }
 
 }
