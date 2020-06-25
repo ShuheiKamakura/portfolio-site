@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: "Hiragino Kaku Gothic ProN";
+    font-family: "Hiragino Kaku Gothic ProN",sans-serif;
 }
 
 a {
@@ -250,7 +250,7 @@ header{
 .skills p{
     font-size: 20px;
     margin-top: 30px;
-    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+    font-family: 'Hiragino Maru Gothic ProN',sans-serif;
 }
 
 .skills h3{
