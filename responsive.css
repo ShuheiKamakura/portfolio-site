@@ -54,11 +54,11 @@
     .global-nav__item a:hover {
         border-bottom: 1px solid #eee;
     }
-    .hamburger__line {
+     .hamburger__line {
         position: absolute;
-        left: -20px;
-        width: 40px;
-        height: 2px;
+        left: -40px;
+        width: 60px;
+        height: 3px;
         background-color: #111;
         transition: all .6s;
     }
@@ -66,10 +66,10 @@
         top: 24px;
     }
     .hamburger__line--2 {
-        top: 40px;
+        top: 43px;
     }
     .hamburger__line--3 {
-        top: 56px;
+        top: 61px;
     }
     
     /* 表示された時用のCSS */
@@ -283,6 +283,12 @@
         height: 60px;
         margin: 0;
         margin-top: 12px;
+    }
+    input, textarea {
+        font-size: 30px;
+    }
+    textarea::placeholder{
+        font-size: 30;
     }
 
 }
