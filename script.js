@@ -71,7 +71,7 @@ $(function () {
 
 $(function () {
     var topBtn = $('.header-bottom');
-    topBtn.hide(2000);
+    topBtn.hide();
 
     //スクロールが100達したら表示
     $(window).scroll(function () {
